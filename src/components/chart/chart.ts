@@ -2099,7 +2099,7 @@ export default class ChartController {
       return
     }
 
-    let priceline = api.getPriceLine(price)
+    let priceline = api.getPriceLine(price, this.chartInstance.timeScale().coordinateToLogical(originalOffset.x))
 
     let market
 
